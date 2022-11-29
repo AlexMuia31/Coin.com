@@ -12,13 +12,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body style="background-color: #303443; min-height: 100vh">
-    <p style="text-align: center; color: #fff; text-align: center">
-      비트코인 ₩42,806,876 -4.80% (-1,829,000) USD/KRW 1,202.5 +0.88% (+11.07)
-      나스닥종합지수 (IXIC) 13,037.49 -2.57% (-344.03) 비트코인 도미넌스 43.05
-      +1.24% (+0.52)
-    </p>
     <nav class="navbar" style="background-color: #303443">
       <div class="container-fluid" style="justify-content: space-between">
         <a class="navbar-brand"
@@ -36,17 +38,168 @@
             >Com</span
           ></a
         >
-        <div style="color: #fff; display: flex">
+        <div
+          style="
+            color: #fff;
+            display: flex;
+            width: 120px;
+            justify-content: space-between;
+          "
+        >
           <div>
-            <img src="./assets/person.svg" height="50px" width="100px" />
+            <i
+              class="fa-solid fa-user"
+              style="color: #fff; font-size: 20px"
+            ></i>
           </div>
-          <div>test</div>
-          <div>test</div>
+          <div>
+            <i
+              class="fa-regular fa-wallet"
+              style="color: #fff; font-size: 20px"
+            ></i>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-gear"
+              style="color: #fff; font-size: 20px"
+            ></i>
+          </div>
         </div>
       </div>
     </nav>
-    <container class="container-fluid">
-      <a href="home.html"> <h1>Tetstststststs styststts</h1></a>
+    <container
+      class="container-fluid"
+      style="display: flex; justify-content: center; margin-top: 120px"
+    >
+      <div style="width: clamp(398px, 80vw, 864px)">
+        <div style="display: flex; justify-content: center">
+          <h1 style="font-weight: 700; font-size: 50px">
+            <span style="color: #ffe600">Coin.</span
+            ><span style="color: #fff">Com</span>
+          </h1>
+        </div>
+        <div class="input-group" style="margin-top: 90px">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text"
+              style="
+                border-radius: 30px 0px 0px 30px !important ;
+                background-color: #fff;
+                border-right: 0px !important;
+              "
+              ><i
+                class="fa-solid fa-magnifying-glass"
+                style="width: 20px; height: 28px; margin-top: 50%"
+              ></i
+            ></span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Amount (to the nearest dollar)"
+            style="border: 0px !important"
+          />
+          <div class="input-group-append">
+            <span
+              class="input-group-text"
+              style="
+                border-radius: 0px 30px 30px 0px !important ;
+                background-color: #fff;
+                border-right: 0px !important;
+                height: 52px;
+              "
+            >
+              <div
+                style="
+                  background-color: #303443;
+                  width: 60px;
+                  height: 30px;
+                  border-radius: 20px;
+                "
+              >
+                <span style="color: #ffe600; font-size: 20px; font-weight: 700"
+                  >c.</span
+                >
+                <span style="color: #fff; font-size: 20px; font-weight: 700"
+                  >c</span
+                >
+              </div>
+            </span>
+          </div>
+        </div>
+        <div class="container-fluid" style="background-color: #24262e">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div style="display: flex; padding: 20px">
+                <div
+                  style="
+                    width: clamp(120px, 17vw, 141px);
+                    height: 83px;
+                    background-color: gray;
+                    border-radius: 5px;
+                  "
+                ></div>
+                <div style="color: #fff; margin-left: 5px">
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-0">2,658회</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div style="display: flex; padding: 20px">
+                <div
+                  style="
+                    width: clamp(120px, 17vw, 141px);
+                    height: 83px;
+                    background-color: gray;
+                    border-radius: 5px;
+                  "
+                ></div>
+                <div style="color: #fff; margin-left: 5px">
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-0">2,658회</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div style="display: flex; padding: 20px">
+                <div
+                  style="
+                    width: clamp(120px, 17vw, 141px);
+                    height: 83px;
+                    background-color: gray;
+                    border-radius: 5px;
+                  "
+                ></div>
+                <div style="color: #fff; margin-left: 5px">
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-0">2,658회</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div style="display: flex; padding: 20px">
+                <div
+                  style="
+                    width: clamp(120px, 17vw, 141px);
+                    height: 83px;
+                    background-color: gray;
+                    border-radius: 5px;
+                  "
+                ></div>
+                <div style="color: #fff; margin-left: 5px">
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-1">게시글 제목</p>
+                  <p class="mb-0">2,658회</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </container>
 
     <script
