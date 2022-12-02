@@ -109,7 +109,7 @@
         margin-bottom: 138px;
       "
     >
-      <div style="width: clamp(398px, 80vw, 864px)">
+      <div style="width: clamp(370px, 80vw, 864px)">
         <div style="display: flex; justify-content: center">
           <h1 style="font-weight: 700; font-size: 50px">
             <span style="color: #ffe600">Coin.</span
@@ -169,6 +169,7 @@
         </div>
         <!-- search bar end-->
         <div style="margin-top: clamp(10px, 10%, 99px)">
+          <!-- overal tabs -->
           <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
@@ -252,7 +253,460 @@
               id="pills-all"
               role="tabpanel"
             >
-              All
+              <!-- nested tabs -->
+              <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-alll-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-alll"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-alll"
+                    aria-selected="true"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    ALL
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-new-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-new"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-new"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    NEW
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-art-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-art"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-art"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    예술
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-domain-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-domain"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-domain"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    www.도메인 주소
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-music-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-music"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-music"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    음악
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-photo-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-photo"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-photo"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    사진
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-sports-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-sports"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-sports"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    스포츠
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-trading-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-trading"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-trading"
+                    aria-selected="false"
+                    style="background-color: #fff; color: #000; margin: 3px"
+                  >
+                    트레이딩 카드
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-alll"
+                  role="tabpanel"
+                >
+                  <div
+                    style="
+                      min-height: clamp(500px, 60vh, 957px);
+                      background-color: #fff;
+                      border-radius: 10px;
+                      padding: 37px 40px;
+                    "
+                  >
+                    <div class="table-responsive">
+                      <table class="table align-middle table-responsive">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">NFT명</th>
+                            <th scope="col">시가총액</th>
+                            <th scope="col">24시간</th>
+                            <th scope="col">일주일</th>
+                            <th scope="col">최저가</th>
+                            <th scope="col">보유자수</th>
+                            <th scope="col">시간</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <div>1</div>
+                            </th>
+                            <td>
+                              <div
+                                style="
+                                  display: flex;
+                                  align-items: center;
+                                  gap: 10%;
+                                "
+                              >
+                                <div
+                                  style="
+                                    height: 45px;
+                                    width: 45px;
+                                    background-color: #000;
+                                    border-radius: 50%;
+                                  "
+                                ></div>
+                                <div>Mark</div>
+                              </div>
+                            </td>
+                            <td>12345.67</td>
+                            <td>+100%</td>
+                            <td>-100%</td>
+                            <td>1.23</td>
+                            <td>1.2만</td>
+                            <td>12.3만</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-new"
+                  role="tabpanel"
+                  aria-labelledby="pills-new-tab"
+                >
+                  New
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-art"
+                  role="tabpanel"
+                  aria-labelledby="pills-art-tab"
+                >
+                  ART
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-domain"
+                  role="tabpanel"
+                  aria-labelledby="pills-domain-tab"
+                >
+                  Domain
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-music"
+                  role="tabpanel"
+                  aria-labelledby="pills-music-tab"
+                >
+                  Music
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-photo"
+                  role="tabpanel"
+                  aria-labelledby="pills-photo-tab"
+                >
+                  Photo
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-sports"
+                  role="tabpanel"
+                  aria-labelledby="pills-sports-tab"
+                >
+                  Sports
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-trading"
+                  role="tabpanel"
+                  aria-labelledby="pills-trading-tab"
+                >
+                  Trading Card
+                </div>
+              </div>
             </div>
             <div
               class="tab-pane fade"
