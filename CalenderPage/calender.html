@@ -16,6 +16,7 @@
 </head>
 
 <body class="root">
+
     <div class="container">
         <div class="ad">
             <h5 class="adText">ad</h5>
@@ -25,7 +26,15 @@
         <div class="row">
             <div class="col d-none d-lg-block">
                 <div class="calenderWrapper">
-                    <div class="calendar"></div>
+                    <div class="calendar">
+
+                    </div>
+                    <div class="klay">
+                        <div class="top">
+                            <div class="dot"></div><span style="padding-left: 10px;">Klay mainnet</span>
+                        </div>
+                        <div class="num">#91,136,130</div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-8">
@@ -71,7 +80,9 @@
                                         opacity: 0.7;">
                                             <div class="col-sm-4">
 
-
+                                                <div class="enquire">
+                                                    <div class="help">?</div>
+                                                </div>
                                                 <div class="wrapper">
                                                     <div class="first">
                                                         <div class="korean">
@@ -80,7 +91,7 @@
 
                                                         </div>
                                                         <div class="date">
-                                                            <div>7월 22일 금요일</div>
+                                                            <div class="DateYear">7월 22일 금요일</div>
                                                         </div>
 
                                                     </div>
@@ -133,15 +144,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="links">
-                                                        <i class="fa fa-globe" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-twitter-square"
-                                                            style="width:45px; height: 45px;" aria-hidden="true"></i>
-                                                        <i class="fa fa-telegram" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-meetup" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-
+                                                        <div class="globe">
+                                                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="twitter">
+                                                            <i class="fa fa-twitter-square"
+                                                                style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="tg">
+                                                            <i class="fa fa-telegram" style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="meetup">
+                                                            <i class="fa fa-meetup" style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -172,7 +190,74 @@
                                                         <span style="font-weight:bold;">민팅가</span>
                                                         <div class="assetchip1 fa-gg-circle" aria-hidden="true">0.05
                                                         </div>
-                                                        <div class="question">?</div>
+                                                        <button class="question" id="button"
+                                                            aria-describedby="tooltip">?
+                                                        </button>
+                                                        <div id="tooltip" role="tooltip">
+                                                            <div class="eth"> 1 ETH = 2,283,000 KRW</div>
+                                                            <div class="aprox">1 ETH ≈ 2,283,000 KRW </div>
+                                                            <div class="default">※현재시세는 바이낸스 기준으로 정확하지 않을 수 있습니다.</div>
+                                                            <div id="arrow" data-popper-arrow></div>
+                                                        </div>
+                                                        <script src="https://unpkg.com/@popperjs/core@2"></script>
+                                                        <script>
+                                                            const button = document.querySelector('#button');
+                                                            const tooltip = document.querySelector('#tooltip');
+
+                                                            const popperInstance = Popper.createPopper(button, tooltip, {
+                                                                modifiers: [
+                                                                    {
+                                                                        name: 'offset',
+                                                                        options: {
+                                                                            offset: [0, 8],
+                                                                        },
+                                                                    },
+                                                                ],
+                                                                placement: 'top',
+                                                            });
+
+                                                            function show() {
+                                                                // Make the tooltip visible
+                                                                tooltip.setAttribute('data-show', '');
+
+                                                                // Enable the event listeners
+                                                                popperInstance.setOptions((options) => ({
+                                                                    ...options,
+                                                                    modifiers: [
+                                                                        ...options.modifiers,
+                                                                        { name: 'eventListeners', enabled: true },
+                                                                    ],
+                                                                }));
+
+                                                                // Update its position
+                                                                popperInstance.update();
+                                                            }
+
+                                                            function hide() {
+                                                                // Hide the tooltip
+                                                                tooltip.removeAttribute('data-show');
+
+                                                                // Disable the event listeners
+                                                                popperInstance.setOptions((options) => ({
+                                                                    ...options,
+                                                                    modifiers: [
+                                                                        ...options.modifiers,
+                                                                        { name: 'eventListeners', enabled: false },
+                                                                    ],
+                                                                }));
+                                                            }
+
+                                                            const showEvents = ['mouseenter', 'focus'];
+                                                            const hideEvents = ['mouseleave', 'blur'];
+
+                                                            showEvents.forEach((event) => {
+                                                                button.addEventListener(event, show);
+                                                            });
+
+                                                            hideEvents.forEach((event) => {
+                                                                button.addEventListener(event, hide);
+                                                            });
+                                                        </script>
                                                     </div>
                                                 </div>
                                             </div>
@@ -188,7 +273,9 @@
                                         opacity: 0.7;">
                                             <div class="col-sm-4">
 
-
+                                                <div class="enquire">
+                                                    <div class="help">?</div>
+                                                </div>
                                                 <div class="wrapper">
                                                     <div class="first">
                                                         <div class="korean">
@@ -197,7 +284,7 @@
 
                                                         </div>
                                                         <div class="date">
-                                                            <div>7월 22일 금요일</div>
+                                                            <div class="DateYear">7월 22일 금요일</div>
                                                         </div>
 
                                                     </div>
@@ -250,15 +337,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="links">
-                                                        <i class="fa fa-globe" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-twitter-square"
-                                                            style="width:45px; height: 45px;" aria-hidden="true"></i>
-                                                        <i class="fa fa-telegram" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-meetup" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-
+                                                        <div class="globe">
+                                                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="twitter">
+                                                            <i class="fa fa-twitter-square"
+                                                                style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="tg">
+                                                            <i class="fa fa-telegram" style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="meetup">
+                                                            <i class="fa fa-meetup" style="width:45px; height: 45px;"
+                                                                aria-hidden="true"></i>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -289,7 +383,16 @@
                                                         <span style="font-weight:bold;">민팅가</span>
                                                         <div class="assetchip1 fa-gg-circle" aria-hidden="true">0.05
                                                         </div>
-                                                        <div class="question">?</div>
+                                                        <button class="question" id="button"
+                                                            aria-describedby="tooltip">?
+                                                        </button>
+                                                        <div id="tooltip" role="tooltip">
+                                                            <div class="eth"> 1 ETH = 2,283,000 KRW</div>
+                                                            <div class="aprox">1 ETH ≈ 2,283,000 KRW </div>
+                                                            <div class="default">※현재시세는 바이낸스 기준으로 정확하지 않을 수 있습니다.</div>
+                                                            <div id="arrow" data-popper-arrow></div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -297,243 +400,17 @@
                                     </div>
                                 </div>
 
-
-                                <div class="main">
-                                    <div class="end">
-                                        <div class="row gx-0" style="background: #000000 0% 0% no-repeat padding-box;
-                                        min-height: 124px;
-                                        border-radius: 15px;
-                                        opacity: 0.7;">
-                                            <div class="col-sm-4">
-
-
-                                                <div class="wrapper">
-                                                    <div class="first">
-                                                        <div class="korean">
-                                                            <div style="height: 20px;
-                                                        ">남은시간 0 일 0 시 0 분 0 초</div>
-
-                                                        </div>
-                                                        <div class="date">
-                                                            <div>7월 22일 금요일</div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="secondary">end</div>
-                                                </div>
-
-                                                <!-- mobile -->
-
-                                                <div class="second">
-                                                    <div class="avatar">
-                                                        <div class="chip">Public</div>
-                                                    </div>
-                                                    <div class="metadata">
-                                                        <div class="nft">NFT명</div>
-                                                        <div class="decentraland">Decentraland</div>
-                                                    </div>
-                                                </div>
-                                                <!-- end -->
-                                            </div>
-
-
-                                            <div class="col-sm-4">
-                                                <!-- desktop -->
-                                                <div class="seconddesktop">
-                                                    <div class="avatar">
-                                                        <div class="chip">Public</div>
-                                                    </div>
-                                                    <div class="metadata">
-                                                        <div class="nft">NFT명</div>
-                                                        <div class="decentraland">Decentraland</div>
-                                                    </div>
-                                                </div>
-                                                <!-- end -->
-
-                                                <div class="tertiary">
-                                                    <div>진행상황</div>
-                                                    <div>총수량 <span
-                                                            style="font-weight:bold; padding-left:15px;">300개</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="cardfooter">
-                                                    <div class="footerstack">
-                                                        <div class="info">
-                                                            민팅가
-                                                        </div>
-                                                        <div class="assetchip fa-gg-circle" aria-hidden="true">0.05
-                                                        </div>
-                                                    </div>
-                                                    <div class="links">
-                                                        <i class="fa fa-globe" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-twitter-square"
-                                                            style="width:45px; height: 45px;" aria-hidden="true"></i>
-                                                        <i class="fa fa-telegram" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-meetup" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="helpertext">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-sm-3"
-                                                    style="border-right: 2px solid #999; display: flex; justify-content: space-around;">
-                                                    <div class="one">진행상황</div>
-                                                    <div class="onepointone">연기</div>
-                                                </div>
-
-                                                <div class="col-sm-3" style="border-right: 2px solid #999;">
-                                                    <div class="two">
-                                                        <span style="font-weight:bold;">남은시간</span> 0 일 0 시 0 분 0 초
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3" style="border-right: 2px solid #999;">
-                                                    <div class="three">
-                                                        <span style="font-weight:bold; ">총 수량</span>
-                                                        100,000 개
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="four">
-                                                        <span style="font-weight:bold;">민팅가</span>
-                                                        <div class="assetchip1 fa-gg-circle" aria-hidden="true">0.05
-                                                        </div>
-                                                        <div class="question">?</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="pagination">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination">
+                                            <li class="page-item"><a class="page-link" href="#">이전</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">다음</a></li>
+                                        </ul>
+                                    </nav>
                                 </div>
-
-                                
-                                <div class="main">
-                                    <div class="end">
-                                        <div class="row gx-0" style="background: #000000 0% 0% no-repeat padding-box;
-                                        min-height: 124px;
-                                        border-radius: 15px;
-                                        opacity: 0.7;">
-                                            <div class="col-sm-4">
-
-
-                                                <div class="wrapper">
-                                                    <div class="first">
-                                                        <div class="korean">
-                                                            <div style="height: 20px;
-                                                        ">남은시간 0 일 0 시 0 분 0 초</div>
-
-                                                        </div>
-                                                        <div class="date">
-                                                            <div>7월 22일 금요일</div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="secondary">end</div>
-                                                </div>
-
-                                                <!-- mobile -->
-
-                                                <div class="second">
-                                                    <div class="avatar">
-                                                        <div class="chip">Public</div>
-                                                    </div>
-                                                    <div class="metadata">
-                                                        <div class="nft">NFT명</div>
-                                                        <div class="decentraland">Decentraland</div>
-                                                    </div>
-                                                </div>
-                                                <!-- end -->
-                                            </div>
-
-
-                                            <div class="col-sm-4">
-                                                <!-- desktop -->
-                                                <div class="seconddesktop">
-                                                    <div class="avatar">
-                                                        <div class="chip">Public</div>
-                                                    </div>
-                                                    <div class="metadata">
-                                                        <div class="nft">NFT명</div>
-                                                        <div class="decentraland">Decentraland</div>
-                                                    </div>
-                                                </div>
-                                                <!-- end -->
-
-                                                <div class="tertiary">
-                                                    <div>진행상황</div>
-                                                    <div>총수량 <span
-                                                            style="font-weight:bold; padding-left:15px;">300개</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="cardfooter">
-                                                    <div class="footerstack">
-                                                        <div class="info">
-                                                            민팅가
-                                                        </div>
-                                                        <div class="assetchip fa-gg-circle" aria-hidden="true">0.05
-                                                        </div>
-                                                    </div>
-                                                    <div class="links">
-                                                        <i class="fa fa-globe" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-twitter-square"
-                                                            style="width:45px; height: 45px;" aria-hidden="true"></i>
-                                                        <i class="fa fa-telegram" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-                                                        <i class="fa fa-meetup" style="width:45px; height: 45px;"
-                                                            aria-hidden="true"></i>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="helpertext">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-sm-3"
-                                                    style="border-right: 2px solid #999; display: flex; justify-content: space-around;">
-                                                    <div class="one">진행상황</div>
-                                                    <div class="onepointone">연기</div>
-                                                </div>
-
-                                                <div class="col-sm-3" style="border-right: 2px solid #999;">
-                                                    <div class="two">
-                                                        <span style="font-weight:bold;">남은시간</span> 0 일 0 시 0 분 0 초
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3" style="border-right: 2px solid #999;">
-                                                    <div class="three">
-                                                        <span style="font-weight:bold; ">총 수량</span>
-                                                        100,000 개
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <div class="four">
-                                                        <span style="font-weight:bold;">민팅가</span>
-                                                        <div class="assetchip1 fa-gg-circle" aria-hidden="true">0.05
-                                                        </div>
-                                                        <div class="question">?</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -750,6 +627,7 @@
                 loopThroughNextDays: function (count) {
                     if (count > 0) {
                         for (let i = 1; i <= count; i++) {
+                            `<div>캘린더에 일정 등록 요청하기</div>`
                             document.querySelector('.calendar-body').innerHTML += `<div class="next-dates">${i}</div>`;
                         }
                     }
