@@ -67,14 +67,30 @@
 
 .emaildiv {
     max-width: 100%;
+    
 }
+
 
 .email {
     border: none;
     border-bottom: 2px solid black;
     margin-top: 70px;
     width: 100%;
+    background-image: url('../assets/ID.png');
+    background-position: 10px 15px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
 
+.password {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 70px;
+    width: 100%;
+    background-image: url('../assets/Password.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
 }
 
 .secondary {
@@ -103,7 +119,13 @@
     width: 100%;
     font-style: normal normal Noto Sans CJK KR;
     font-weight: 900;
-    font-size:clamp(16px, 2.5vw, 24px); 
+    font-size:clamp(16px, 2.5vw, 24px);
+    display: flex; 
+    justify-content: center;
+}
+.warning img{
+    padding-top: 5px;
+    margin-right: 7px;
 }
 
 .lastdiv {
