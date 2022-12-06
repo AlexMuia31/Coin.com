@@ -1,0 +1,33 @@
+.root {
+    background: #303443;
+}
+
+.news {
+    background: #24262E;
+    border-radius: 5px;
+    color: #fff;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.short {
+   padding-left: 25px;
+   font-size: clamp(18px, 2vw, 26px);  
+}
+.ceo {
+    font-size: clamp(14px, 2vw,20px);
+}
+.grid {
+    margin-top: 25px;
+    /* max-height: 420px; */
+}
+.carousel-inner {
+    max-height: 420px;
+    /* height: 100%; */
+    
+}
+.carousel-item img{
+    object-fit: cover;
+    /* height: 100%; */
+}
