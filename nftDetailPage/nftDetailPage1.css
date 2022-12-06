@@ -259,10 +259,9 @@ line-height: 32px;
     background-color: brown;
 }
 .pills{
-width: 100vw;
-margin-top: 50px;
-line-height: 40px;
-background-color: hotpink;
+  font: normal normal medium 16px/24px Noto Sans CJK KR;
+margin-top: 269px;
+background-color: #303443;
 }
 .pills ul{
   width: 40%;
@@ -383,10 +382,7 @@ background-color: hotpink;
  
   }
 
-  .almost-all{
-    width: 100vw;
-    background: #303443 0% 0% no-repeat padding-box;
-  }
+  
   .board{
     margin: auto;
     margin-top: 268px;
@@ -431,6 +427,10 @@ opacity: 1;
     opacity: 1;
     
   }
+  .almost-all{
+    width: 100vw;
+    background: #303443 0% 0% no-repeat padding-box;
+  }
   .navy{
     padding-top: 5rem;
     padding-bottom: 80px;
@@ -441,6 +441,7 @@ opacity: 1;
     opacity: 1;
     
   }
+  
   .navy-gallery{
     height: 182px;
     display: block;
@@ -502,7 +503,7 @@ opacity: 1;
   .jumbotron{
     width: 100vw;
     height: max-content;
-    background-color: orangered;
+    margin-top: 61px;
   }
   .row-j{
     display: block;

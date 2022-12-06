@@ -44,12 +44,12 @@
     height: 70%;
   }
   .names{
-    width: 80%;
+    width: 100%;
     height: 40px;
   }
   .names p{
     text-align: center;
-    font-size: 18px;
+    font: normal normal bold 15px/21px Noto Sans CJK KR;
   }
   .box1{
     display: block;
