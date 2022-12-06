@@ -1,758 +1,499 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coin.com</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body style="background-color: #303443; min-height: 100vh">
-    <!-- navbar start -->
-    <nav class="navbar pt-0" style="background-color: #303443">
-      <div
-        class="container-fluid"
-        style="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coin.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="background-color: #303443; min-height: 100vh">
+  <!-- navbar start -->
+  <nav class="navbar pt-0" style="background-color: #303443">
+    <div class="container-fluid" style="
           background-color: #24262e;
           display: flex;
           justify-content: center;
-        "
-      >
-        <p class="mb-0" style="color: #fff">
-          비트코인 ₩42,806,876 -4.80% (-1,829,000) USD/KRW 1,202.5 +0.88%
-          (+11.07) 나스닥종합지수 (IXIC) 13,037.49 -2.57% (-344.03) 비트코인
-          도미넌스 43.05 +1.24% (+0.52)
-        </p>
-      </div>
-      <div class="container-fluid" style="justify-content: space-between">
-        <a class="navbar-brand"
-          ><span
-            style="
+        ">
+      <p class="mb-0" style="color: #fff">
+        비트코인 ₩42,806,876 -4.80% (-1,829,000) USD/KRW 1,202.5 +0.88%
+        (+11.07) 나스닥종합지수 (IXIC) 13,037.49 -2.57% (-344.03) 비트코인
+        도미넌스 43.05 +1.24% (+0.52)
+      </p>
+    </div>
+    <div class="container-fluid" style="justify-content: space-between">
+      <a class="navbar-brand"><span style="
               color: #ffe600;
               font: normal normal bold 26px/37px Noto Sans CJK KR;
-            "
-            >Coin.</span
-          ><span
-            style="
+            ">Coin.</span><span style="
               font: normal normal bold 26px/37px Noto Sans CJK KR;
               color: #fff;
-            "
-            >Com</span
-          ></a
-        >
-        <div
-          style="
+            ">Com</span></a>
+      <div style="
             color: #fff;
             display: flex;
             width: 120px;
             justify-content: space-between;
-          "
-        >
-          <div>
-            <i
-              class="fa-solid fa-user"
-              style="color: #fff; font-size: 20px"
-            ></i>
-          </div>
-          <div>
-            <i
-              class="fa-regular fa-wallet"
-              style="color: #fff; font-size: 20px"
-            ></i>
-          </div>
-          <div>
-            <i
-              class="fa-solid fa-gear"
-              style="color: #fff; font-size: 20px"
-            ></i>
-          </div>
+          ">
+        <div>
+          <i class="fa-solid fa-user" style="color: #fff; font-size: 20px"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-wallet" style="color: #fff; font-size: 20px"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-gear" style="color: #fff; font-size: 20px"></i>
         </div>
       </div>
-      <div class="container-fluid" style="background-color: #444a60">
-        <div
-          style="
+    </div>
+    <div class="container-fluid" style="background-color: #444a60">
+      <div style="
             display: flex;
             justify-content: space-between;
             width: 366px;
             margin-left: clamp(0px, 10vw, 221px);
-          "
-        >
-          <p class="mb-0" style="color: #fff">
-            <i class="fa-solid fa-plus"></i>
-          </p>
-          <p class="mb-0" style="color: #fff">NFT 커뮤니티</p>
-          <p class="mb-0" style="color: #fff">비트코인 커뮤니티</p>
-          <p class="mb-0" style="color: #fff">뉴스</p>
-        </div>
+          ">
+        <p class="mb-0" style="color: #fff">
+          <i class="fa-solid fa-plus"></i>
+        </p>
+        <p class="mb-0" style="color: #fff">NFT 커뮤니티</p>
+        <p class="mb-0" style="color: #fff">비트코인 커뮤니티</p>
+        <p class="mb-0" style="color: #fff">뉴스</p>
       </div>
-    </nav>
-    <!-- navbar end -->
-    <container
-      class="container-fluid"
-      style="
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <container class="container-fluid" style="
         display: flex;
         justify-content: center;
         margin-top: 120px;
         min-height: 100vh;
         margin-bottom: 138px;
-      "
-    >
-      <div style="width: clamp(370px, 80vw, 864px)">
-        <div style="display: flex; justify-content: center">
-          <h1 style="font-weight: 700; font-size: 50px">
-            <span style="color: #ffe600">Coin.</span
-            ><span style="color: #fff">Com</span>
-          </h1>
-        </div>
-        <!-- search bar -->
-        <div class="input-group" style="margin-top: 90px">
-          <div class="input-group-prepend">
-            <span
-              class="input-group-text"
-              style="
+      ">
+    <div style="width: clamp(370px, 80vw, 864px)">
+      <div style="display: flex; justify-content: center">
+        <h1 style="font-weight: 700; font-size: 50px">
+          <span style="color: #ffe600">Coin.</span><span style="color: #fff">Com</span>
+        </h1>
+      </div>
+      <!-- search bar -->
+      <div class="input-group" style="margin-top: 90px">
+        <div class="input-group-prepend">
+          <span class="input-group-text" style="
                 border-radius: 30px 0px 0px 30px !important ;
                 background-color: #fff;
                 border-right: 0px !important;
-              "
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="width: 20px; height: 28px; margin-top: 50%"
-              ></i
-            ></span>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Amount (to the nearest dollar)"
-            style="border: 0px !important"
-            placeholder="가상자산명, 게시글, 뉴스, 키워드 등등..."
-          />
-          <div class="input-group-append">
-            <span
-              class="input-group-text"
-              style="
+              "><i class="fa-solid fa-magnifying-glass" style="width: 20px; height: 28px; margin-top: 50%"></i></span>
+        </div>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+          style="border: 0px !important" placeholder="가상자산명, 게시글, 뉴스, 키워드 등등..." />
+        <div class="input-group-append">
+          <span class="input-group-text" style="
                 border-radius: 0px 30px 30px 0px !important ;
                 background-color: #fff;
                 border-right: 0px !important;
                 height: 52px;
-              "
-            >
-              <div
-                style="
+              ">
+            <div style="
                   background-color: #303443;
                   width: 60px;
                   height: 30px;
                   border-radius: 20px;
-                "
-              >
-                <span style="color: #ffe600; font-size: 20px; font-weight: 700"
-                  >c.</span
-                >
-                <span style="color: #fff; font-size: 20px; font-weight: 700"
-                  >c</span
-                >
-              </div>
-            </span>
-          </div>
+                ">
+              <span style="color: #ffe600; font-size: 20px; font-weight: 700">c.</span>
+              <span style="color: #fff; font-size: 20px; font-weight: 700">c</span>
+            </div>
+          </span>
         </div>
-        <!-- search bar end-->
-        <div style="margin-top: clamp(10px, 10%, 99px)">
-          <!-- overal tabs -->
-          <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="pills-all-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-all"
-                type="button"
-                role="tab"
-                aria-controls="pills-all"
-                aria-selected="true"
-                style="background-color: #fff; color: #000; margin-right: 3px"
-              >
-                ALL
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-ethereum-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-ethereum"
-                type="button"
-                role="tab"
-                aria-controls="pills-ethereum"
-                aria-selected="false"
-                style="background-color: #fff; color: #000; margin-right: 3px"
-              >
-                이더리움
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-clayton-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-clayton"
-                type="button"
-                role="tab"
-                aria-controls="pills-clayton"
-                aria-selected="false"
-                style="background-color: #fff; color: #000; margin-right: 3px"
-              >
-                클레이튼
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-polygon-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-polygon"
-                type="button"
-                role="tab"
-                aria-controls="pills-polygon"
-                aria-selected="false"
-                style="background-color: #fff; color: #000; margin-right: 3px"
-              >
-                폴리곤
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="pills-solana-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-solana"
-                type="button"
-                role="tab"
-                aria-controls="pills-solana"
-                aria-selected="false"
-                style="background-color: #fff; color: #000"
-              >
-                솔라나
-              </button>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="pills-all"
-              role="tabpanel"
-            >
-              <!-- nested tabs -->
-              <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link active"
-                    id="pills-alll-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-alll"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-alll"
-                    aria-selected="true"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    ALL
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-new-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-new"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-new"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    NEW
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-art-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-art"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-art"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    예술
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-domain-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-domain"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-domain"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    www.도메인 주소
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-music-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-music"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-music"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    음악
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-photo-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-photo"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-photo"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    사진
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-sports-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-sports"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-sports"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    스포츠
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button
-                    class="nav-link"
-                    id="pills-trading-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-trading"
-                    type="button"
-                    role="tab"
-                    aria-controls="pills-trading"
-                    aria-selected="false"
-                    style="background-color: #fff; color: #000; margin: 3px"
-                  >
-                    트레이딩 카드
-                  </button>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-alll"
-                  role="tabpanel"
-                >
-                  <div
-                    style="
+      </div>
+      <!-- search bar end-->
+      <div style="margin-top: clamp(10px, 10%, 99px)">
+        <!-- overal tabs -->
+        <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all"
+              type="button" role="tab" aria-controls="pills-all" aria-selected="true"
+              style="background-color: #fff; color: #000; margin-right: 3px">
+              ALL
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-ethereum-tab" data-bs-toggle="pill" data-bs-target="#pills-ethereum"
+              type="button" role="tab" aria-controls="pills-ethereum" aria-selected="false"
+              style="background-color: #fff; color: #000; margin-right: 3px">
+              이더리움
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-clayton-tab" data-bs-toggle="pill" data-bs-target="#pills-clayton"
+              type="button" role="tab" aria-controls="pills-clayton" aria-selected="false"
+              style="background-color: #fff; color: #000; margin-right: 3px">
+              클레이튼
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-polygon-tab" data-bs-toggle="pill" data-bs-target="#pills-polygon"
+              type="button" role="tab" aria-controls="pills-polygon" aria-selected="false"
+              style="background-color: #fff; color: #000; margin-right: 3px">
+              폴리곤
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-solana-tab" data-bs-toggle="pill" data-bs-target="#pills-solana"
+              type="button" role="tab" aria-controls="pills-solana" aria-selected="false"
+              style="background-color: #fff; color: #000">
+              솔라나
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel">
+            <!-- nested tabs -->
+            <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-alll-tab" data-bs-toggle="pill" data-bs-target="#pills-alll"
+                  type="button" role="tab" aria-controls="pills-alll" aria-selected="true"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  ALL
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-new-tab" data-bs-toggle="pill" data-bs-target="#pills-new"
+                  type="button" role="tab" aria-controls="pills-new" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  NEW
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-art-tab" data-bs-toggle="pill" data-bs-target="#pills-art"
+                  type="button" role="tab" aria-controls="pills-art" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  예술
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-domain-tab" data-bs-toggle="pill" data-bs-target="#pills-domain"
+                  type="button" role="tab" aria-controls="pills-domain" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  www.도메인 주소
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-music-tab" data-bs-toggle="pill" data-bs-target="#pills-music"
+                  type="button" role="tab" aria-controls="pills-music" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  음악
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-photo-tab" data-bs-toggle="pill" data-bs-target="#pills-photo"
+                  type="button" role="tab" aria-controls="pills-photo" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  사진
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-sports-tab" data-bs-toggle="pill" data-bs-target="#pills-sports"
+                  type="button" role="tab" aria-controls="pills-sports" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  스포츠
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-trading-tab" data-bs-toggle="pill" data-bs-target="#pills-trading"
+                  type="button" role="tab" aria-controls="pills-trading" aria-selected="false"
+                  style="background-color: #fff; color: #000; margin: 3px">
+                  트레이딩 카드
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-alll" role="tabpanel">
+                <div style="
                       min-height: clamp(500px, 60vh, 957px);
                       background-color: #fff;
                       border-radius: 10px;
                       padding: 37px 40px;
-                    "
-                  >
-                    <div class="table-responsive">
-                      <table class="table align-middle table-responsive">
-                        <thead>
-                          <tr>
-                            <th scope="col"></th>
-                            <th scope="col">NFT명</th>
-                            <th scope="col">시가총액</th>
-                            <th scope="col">24시간</th>
-                            <th scope="col">일주일</th>
-                            <th scope="col">최저가</th>
-                            <th scope="col">보유자수</th>
-                            <th scope="col">시간</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                    ">
+                  <div class="table-responsive">
+                    <table class="table align-middle table-responsive">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">NFT명</th>
+                          <th scope="col">시가총액</th>
+                          <th scope="col">24시간</th>
+                          <th scope="col">일주일</th>
+                          <th scope="col">최저가</th>
+                          <th scope="col">보유자수</th>
+                          <th scope="col">시간</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <div>1</div>
-                            </th>
-                            <td>
-                              <div
-                                style="
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">
+                            <div>1</div>
+                          </th>
+                          <td>
+                            <div style="
                                   display: flex;
                                   align-items: center;
                                   gap: 10%;
-                                "
-                              >
-                                <div
-                                  style="
+                                ">
+                              <div style="
                                     height: 45px;
                                     width: 45px;
                                     background-color: #000;
                                     border-radius: 50%;
-                                  "
-                                ></div>
-                                <div>Mark</div>
-                              </div>
-                            </td>
-                            <td>12345.67</td>
-                            <td>+100%</td>
-                            <td>-100%</td>
-                            <td>1.23</td>
-                            <td>1.2만</td>
-                            <td>12.3만</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                                  "></div>
+                              <div>Mark</div>
+                            </div>
+                          </td>
+                          <td>12345.67</td>
+                          <td>+100%</td>
+                          <td>-100%</td>
+                          <td>1.23</td>
+                          <td>1.2만</td>
+                          <td>12.3만</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-new"
-                  role="tabpanel"
-                  aria-labelledby="pills-new-tab"
-                >
-                  New
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-art"
-                  role="tabpanel"
-                  aria-labelledby="pills-art-tab"
-                >
-                  ART
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-domain"
-                  role="tabpanel"
-                  aria-labelledby="pills-domain-tab"
-                >
-                  Domain
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-music"
-                  role="tabpanel"
-                  aria-labelledby="pills-music-tab"
-                >
-                  Music
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-photo"
-                  role="tabpanel"
-                  aria-labelledby="pills-photo-tab"
-                >
-                  Photo
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-sports"
-                  role="tabpanel"
-                  aria-labelledby="pills-sports-tab"
-                >
-                  Sports
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="pills-trading"
-                  role="tabpanel"
-                  aria-labelledby="pills-trading-tab"
-                >
-                  Trading Card
-                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
+                New
+              </div>
+              <div class="tab-pane fade" id="pills-art" role="tabpanel" aria-labelledby="pills-art-tab">
+                ART
+              </div>
+              <div class="tab-pane fade" id="pills-domain" role="tabpanel" aria-labelledby="pills-domain-tab">
+                Domain
+              </div>
+              <div class="tab-pane fade" id="pills-music" role="tabpanel" aria-labelledby="pills-music-tab">
+                Music
+              </div>
+              <div class="tab-pane fade" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab">
+                Photo
+              </div>
+              <div class="tab-pane fade" id="pills-sports" role="tabpanel" aria-labelledby="pills-sports-tab">
+                Sports
+              </div>
+              <div class="tab-pane fade" id="pills-trading" role="tabpanel" aria-labelledby="pills-trading-tab">
+                Trading Card
               </div>
             </div>
-            <div
-              class="tab-pane fade"
-              id="pills-ethereum"
-              role="tabpanel"
-              aria-labelledby="pills-ethereum-tab"
-            >
-              Ethereum
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-clayton"
-              role="tabpanel"
-              aria-labelledby="pills-clayton-tab"
-            >
-              Clayton
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-polygon"
-              role="tabpanel"
-              aria-labelledby="pills-polygon-tab"
-            >
-              polygon
-            </div>
-            <div
-              class="tab-pane fade"
-              id="pills-solana"
-              role="tabpanel"
-              aria-labelledby="pills-solana-tab"
-            >
-              solana
-            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-ethereum" role="tabpanel" aria-labelledby="pills-ethereum-tab">
+            Ethereum
+          </div>
+          <div class="tab-pane fade" id="pills-clayton" role="tabpanel" aria-labelledby="pills-clayton-tab">
+            Clayton
+          </div>
+          <div class="tab-pane fade" id="pills-polygon" role="tabpanel" aria-labelledby="pills-polygon-tab">
+            polygon
+          </div>
+          <div class="tab-pane fade" id="pills-solana" role="tabpanel" aria-labelledby="pills-solana-tab">
+            solana
           </div>
         </div>
       </div>
-    </container>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+  </container>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
