@@ -48,10 +48,49 @@
 }
 
 .end {
-    background: #000000;
+    background-image: url('../assets/moon.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 15px;
-    opacity: .7;
+    
+}
+.end1 {
+    background-image: url('../assets/dclwearables-banner.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    
+}
+.end2 {
+    background-image: url('../assets/coin.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    
+}
+.end3 {
+    background-image: url('../assets/cryptopunks.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    
+}
+.end4 {
+    background-image: url('../assets/boredapeyac.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 15px;
+    
 }
 
 .main {
@@ -106,29 +145,56 @@
 }
 
 .avatar {
-    height: 70px;
-    width: 70px;
-    background-color: red;
-    border-radius: 99%;
-
+    
+    background-image: url(../assets/wl.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
 }
-
+.avatar1 {
+    
+    background-image: url(../assets/pyramid.png);
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.avatar2 {
+    
+    background-image: url(../assets/cc.png);
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.avatar2 {
+    
+    background-image: url(../assets/chinku2.png);
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
 .chip {
-    background: #FFCC00 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 30px;
-    opacity: 1;
     height: 20px;
     width: 52px;
     margin-top: 52px;
-    margin-left: 10px;
-    color: #fff;
-    font-size: clamp(12px, 2vw, 17px);
+    margin-left: 10px;  
+}
+.chip1 {
+    
+    height: 20px;
+    width: 52px;
+    margin-top: 52px;
+    margin-left: 10px;  
 }
 
 .metadata {
-    padding-left: 15px;
-
+    /* padding-left: 15px; */
 }
 
 .nft {
@@ -142,6 +208,7 @@
     font-size: clamp(30px, 2vw, 44px);
     font-weight: bold;
     height: 47px;
+    white-space: nowrap;
 }
 
 .tertiary {
@@ -306,6 +373,8 @@ ul.pagination li:last-child a {
         letter-spacing: 0px;
         color: #000000;
         opacity: 1;
+        gap:10px;
+        padding-bottom: 10px;
     }
 
     .korean {
@@ -362,7 +431,7 @@ ul.pagination li:last-child a {
     .seconddesktop {
         display: flex;
         margin-top: 55px;
-        padding-left: 20px;
+        
     }
 
     #tooltip {
@@ -440,7 +509,7 @@ ul.pagination li:last-child a {
 
     .links {
         display: flex;
-        justify-content: space-between;
+        gap: 10px;
 
     }
 
@@ -533,6 +602,17 @@ ul.pagination li:last-child a {
     }
     .pagination1 {
         display: none;
+    }
+    .nav-link:active {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .nav-link:focus {
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .solana :active{
+        color: #000;
     }
 
 }
