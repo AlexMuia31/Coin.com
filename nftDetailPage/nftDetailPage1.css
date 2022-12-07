@@ -1,24 +1,38 @@
-
-.main{
-    width: 100vw;
-    /* height: 1080px; */
+.major{
+  background: url(../assets/backgroundNft.png);
+  /* background-image: linear-gradient(red, yellow); */
+  background-size: cover;
+  background-repeat: no-repeat;
   
 }
+/* .main{
+    width: 100vw;  
+    background-image: url(../assets//backgroundNft.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+   
+  
+} */
 .main-1{
-background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
 opacity: 1;
 padding-top: 40px;
 height: 268px;
-/* padding-top: 30px; */
 position: fixed;
 top: 0;
+background-image: linear-gradient(black,transparent);
 
 }
 .top-nav{
-  color: wheat;
+  color: white;
   display: flex;
   width: 100vw;
   height: max-content;
+}
+.sub-top-nav{
+  width: 60%;
+  margin: auto;
+  display: flex;
 }
 .one{
   width: 50%;
@@ -68,6 +82,11 @@ opacity: 1;
     color: wheat;
     display: block;
   }
+  .sub-top-nav{
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
   .one{
     width: 70%;
     height: max-content;
@@ -79,6 +98,11 @@ opacity: 1;
   }
 }
 @media only screen and (max-width: 468px) {
+  .sub-top-nav{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
   .top-nav{
     color: wheat;
     display: block;
@@ -94,6 +118,19 @@ opacity: 1;
   }
 }
 
+@media only screen and (max-width: 328px) {
+  .sub-top-nav{
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+  .one-ul{
+    font-size: x-small;
+  }
+  .two-ul{
+    font-size: x-small;
+  }
+}
 .second{
     display: flex;
     flex-wrap: wrap;
@@ -105,27 +142,29 @@ opacity: 1;
 .second1{
     width:70px ;
     height: 70px;
-    background: blue;
     border-radius: 100%;
     text-align: center;
+    margin-top: 5px;
 }
 .second2{
     width: 254px;
     height: 71px;
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 .decent{
-    font: normal normal medium 13px/19px Noto Sans CJK KR;
+  font: normal normal medium 13px/19px Noto Sans CJK KR;
 letter-spacing: 0px;
 color: #FFFFFF;
 opacity: 1;
-margin-left: 5px;
+margin-left: 10px;
+text-align: left;
 }
 .decentraland{
-    font: normal normal 900 37px/54px Noto Sans CJK KR;
-    color: #FFFFFF;
+font: normal normal 900 37px/54px Noto Sans CJK KR;
+color: #FFFFFF;
 opacity: 1;
 margin-left: 5px;
+text-align: left;
 }
 .top-10{
     width: max-content;
@@ -144,11 +183,13 @@ opacity: 1;
     display: flex;
     width: 176px;
     justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 .second3-div{
   width: 36px;
   height: 36px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #000000 0% 0% no-repeat padding-box;
    opacity: 1;
    border-radius: 100%;
 }
@@ -157,23 +198,22 @@ opacity: 1;
   height: 36px;
 }
 .second3-invisible{
-    background: #FFE600 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
+    /* background: #FFE600 0% 0% no-repeat padding-box; */
+    box-shadow: 0px 2px 4px #00000029;
     opacity: 1;
     height: 42px;
     width: 89px;
-    text-align: center;
-    line-height: 42px;
     display: none;
+    margin-right: 5px;
 
 }
 @media only screen and (max-width: 920px) {
     .second1{
         width:55px ;
         height: 55px;
-        background: blue;
         border-radius: 100%;
         text-align: center;
+        margin-top: 5px;
     }
     .second2{
         width: 204px;
@@ -181,13 +221,13 @@ opacity: 1;
         margin-right: 35px;
     }
     .decentraland{
-        font: normal normal bold 24px/35px Noto Sans CJK KR;
-        color: #FFFFFF;
+      font: normal normal bold 24px/35px Noto Sans CJK KR;
+    color: #FFFFFF;
     opacity: 1;
     }
 .second3{
 display: none;
-margin-top: 20px;
+margin-top: 10px;
     }
 .second3-invisible{
 display: flex;
@@ -207,8 +247,9 @@ line-height: 32px;
         height: fit-content;
     }
     .second1{
-        width:45px ;
-        height: 45px;
+        width:40px ;
+        height: 40px;
+        margin-top: 5px;
     }
     .second2{
         width: 189px;
@@ -229,39 +270,51 @@ line-height: 32px;
     }
  
     .second3-invisible{
-        background: #FFE600 0% 0% no-repeat padding-box;
-        box-shadow: 0px 3px 6px #00000029;
+        box-shadow: 0px 2px 4px #00000029;
         opacity: 1;
         height: 32px;
         width: 60px;
         text-align: center;
         line-height: 42px;
-        background: #FFE600 0% 0% no-repeat padding-box;
-       box-shadow: 0px 3px 6px #00000029;
-       opacity: 1;
+         opacity: 1;
     
     }
     .second4{
         display: flex;
         margin-left: auto;
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
     }
  
   }
 
+  @media only screen and (max-width: 328px) {
+    .second1{
+        width:35px ;
+        height: 35px;
+        margin-top: 5px;
+    }
+  }
 .second4{
     display: flex;
     margin-left: auto;
+    margin-top: 20px;
 }
 .tag{
     width: 16px;
     height: 24px;
-    background-color: brown;
+}
+.before-pills{
+  width: 100vw;
 }
 .pills{
-  font: normal normal medium 16px/24px Noto Sans CJK KR;
+justify-self: center;
+font: normal normal medium 16px/24px Noto Sans CJK KR;
 margin-top: 269px;
-background-color: #303443;
+
+}
+.pills-div{
+  width: 50%;
+  margin: auto;
 }
 .pills ul{
   width: 40%;
@@ -279,24 +332,54 @@ background-color: #303443;
 }
 @media only screen and (max-width: 920px) {
   .pills{
-    margin-top: 30px;
+    margin-top: 259px;
+    font-size: medium;
   }
   .pills ul{
      width: 60%;
     
   }
 }
-@media only screen and (max-width: 468px) {
+@media only screen and (max-width: 768px) {
   .pills{
-    margin-top: 25px;
+    margin-top: 259px;
+    font-size: small;
   }
   .pills ul{
      width: 70%;
     
   }
+  .tag{
+    width: 12px;
+    height: 20px;
+}
+}
+@media only screen and (max-width: 468px) {
+  .pills{
+    margin-top: 269px;
+    font-size: small;
+  }
+  .pills ul{
+     width: 75%;
+    
+  }
   .nav-item button{
     font-size: small;
   }
+}
+@media only screen and (max-width: 420px) {
+  .pills{
+    margin-top: 259px;
+    font-size: x-small;
+  }
+  .pills ul{
+     width: 90%;
+    
+    
+  }.tag{
+    width: 10px;
+    height: 18px;
+}
 }
 @media only screen and (max-width: 920px) {
     .second{
@@ -346,19 +429,23 @@ background-color: #303443;
       }
  
   }
-
+.numbers{
+  margin-top: 20px;
+}
   @media only screen and (max-width: 920px) {
     .second5-nav{
         margin-top: 3rem;
       }
       .numbers{
         font-size: medium;
+        margin-top: 20px;
     }
  
   }
   @media only screen and (max-width: 768px) {
       .numbers{
         font-size: small;
+        margin-top: 10px;
     }
  
   }
@@ -385,7 +472,7 @@ background-color: #303443;
   
   .board{
     margin: auto;
-    margin-top: 268px;
+    /* margin-top: 268px; */
      width: 50%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -406,14 +493,18 @@ background-color: #303443;
   .board-nav-ul li{
     margin: auto;
     text-align: left;
-font: normal normal bold 20px/29px Noto Sans CJK KR;
+font: normal normal bold 15px/24px Noto Sans CJK KR;
 letter-spacing: 0px;
 color: #000000;
 opacity: 1;
   }
+  .boardnav-icon{
+width: 10px;
+height: 16px;
+  }
   .p-tag{
     text-align: left;
-    font-size: small;
+    font-size: smaller;
     letter-spacing: 0px;
      color: #666666;
     opacity: 1;
@@ -422,14 +513,14 @@ opacity: 1;
   .board-content{
     width: 85%;
     margin: auto;
-    padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 7rem;
     opacity: 1;
     
   }
   .almost-all{
     width: 100vw;
-    background: #303443 0% 0% no-repeat padding-box;
+    background: transparent;
   }
   .navy{
     padding-top: 5rem;
@@ -437,7 +528,7 @@ opacity: 1;
     width: 50%;
     margin: auto;
     height: max-content;
-    background: #303443 0% 0% no-repeat padding-box;
+    background:transparent 0% 0% no-repeat padding-box;
     opacity: 1;
     
   }
@@ -445,7 +536,6 @@ opacity: 1;
   .navy-gallery{
     height: 182px;
     display: block;
-    background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
      border-radius: 10px;
     opacity: 1;
     
@@ -456,15 +546,18 @@ opacity: 1;
 
 
   @media only screen and (max-width: 920px) {
-
-    .board{
+  .board{
         width: 70%;
       }
-      .board-nav{
+.pills-div{
+        width: 70%;
+        margin: auto;
+      }
+  .board-nav{
         width: 100%;
       }
-      .board-nav-ul li{
-    font: normal normal bold 18px/28px Noto Sans CJK KR;
+  .board-nav-ul li{
+       font: normal normal bold 18px/28px Noto Sans CJK KR;
       }
       .navy{
         padding-top: 5rem;
@@ -473,37 +566,60 @@ opacity: 1;
       }
       .navy-gallery{
         height: 142px;
-    /* UI Properties */
-        background: transparent linear-gradient(180deg, #00000000 0%, #000000 100%) 0% 0% no-repeat padding-box;
          border-radius: 10px;
         opacity: 1;
       }
    
-      .almost{
-        text-align: left;
-        justify-content: left;
+  }
+  @media only screen and (max-width: 768px) {
+      .board-nav-ul li{
+    font-size: medium;
+
       }
  
   }
   @media only screen and (max-width: 568px) {
-
+    .pills-div{
+      width: 90%;
+      margin: auto;
+    }
     .board{
         width: 90%;
       }
-      .board-nav{
-        width: 100%;
+      .board-nav ul{
+        display: none;
       }
       .navy{
         width: 90%;
       }
+      .board-nav-ul li{
+    font-size: medium;
+
+      }
  
   }
+  @media only screen and (max-width: 468px) {
+
+      .board-nav-ul li{
+    font-size: small;
+
+      }
+ 
+  }
+  @media only screen and (max-width: 368px) {
+
+    .board-nav-ul li{
+  font-size: x-small;
+
+    }
+
+}
 
  
   .jumbotron{
     width: 100vw;
-    height: max-content;
-    margin-top: 61px;
+    height: 676px;
+    margin-top: 34px;
   }
   .row-j{
     display: block;
@@ -512,7 +628,7 @@ opacity: 1;
 .col-j{
   width: 60%;
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #8d898929;
    border-radius: 20px;
