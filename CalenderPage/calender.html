@@ -17,17 +17,33 @@
 
 <body class="root">
     <nav class="navbar pt-0" style="background-color: #303443">
-        <div class="container-fluid" style="
-            background-color: #24262e;
+        <div class="container-fluid d-none d-lg-flex" style="background-color: #24262e;
             display: flex;
             justify-content: center;
+            color: #fff;
           ">
-            <p class="mb-0" style="color: #fff">
-                비트코인 ₩42,806,876 -4.80% (-1,829,000) USD/KRW 1,202.5 +0.88%
-                (+11.07) 나스닥종합지수 (IXIC) 13,037.49 -2.57% (-344.03) 비트코인
-                도미넌스 43.05 +1.24% (+0.52)
-            </p>
-        </div>
+        <span style="color:#A1A1A5">비트코인 &nbsp;</span> ₩42,806,876
+        <span style="color:red">&nbsp; -4.80% (-1,829,000)</span>
+        <span style="color:#A1A1A5"> &nbsp; USD/KRW</span> 1,202.5
+        <span style="color:green;">&nbsp; +0.88% (+11.07) </span>
+        <span style="color:#A1A1A5">&nbsp; 나스닥종합지수 (IXIC)</span> 13,037.49
+        <span style="color:red;">&nbsp; -2.57% (-344.03) </span>
+        <span style="color:#A1A1A5">&nbsp; 비트코인 도미넌스</span> 43.05
+        <span style="color:green;">&nbsp; +1.24% (+0.52)</span>
+  
+      </div>
+      <div
+    class="container-fluid d-flex d-lg-none"
+    style="
+      background-color: #24262e;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+    "
+  >
+    <span style="color: #a1a1a5">비트코인 &nbsp;</span> ₩42,806,876
+    <span style="color: red">&nbsp; -4.80% (-1,829,000)</span>
+  </div>
         <div class="container-fluid" style="justify-content: space-between">
             <a class="navbar-brand"><span style="
                 color: #ffe600;
@@ -856,37 +872,31 @@
     </div>
 
     <div style="
-        height: clamp(124px, 5vh, 133px);
-        background-color: #24262e;
-        display: flex;
-        justify-content: center;
-        padding-top: 19px;
-        padding-bottom: 25px;
-      ">
-        <div style="color: #a1a1a5; width: clamp(378px, 90vw, 1055px)">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-4 col-md-4 col-lg-4" style="font-size: clamp(12px, 4%, 17px)">
-                        <p class="mb-0">
-                            서울특별시 금천구 가산동 디지털로 9길 33 (IT미래타워)
-                        </p>
-                        <p class="mb-0">
-                            Tel 02) 000-000 / Fax 02) 000-0000 (주)Coin.Com
-                        </p>
-                        <p class="mb-0">사업자등록번호 : 000-00-00000</p>
-                    </div>
-                    <div class="col-xs-8 col-sm-8 col-lg-8">
-                        <p class="mb-0">
-                            개인정보 처리방침 이용약관 소개 제휴/광고 문의/피드백
-                        </p>
-                    </div>
-                    <div class="col" style="display: flex; justify-content: flex-end">
-                        © 2022 Coin.Com, Inc
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    margin-top: 120px;
+     background-color: #24262e;
+     display: flex;
+     justify-content: center;
+     padding-top: 19px;
+     padding-bottom: 25px;
+   ">
+ <div class="container" style="color: #a1a1a5;">
+   <div style="display:flex; justify-content:center; font-size: clamp(14px,2vw,20px);"><span>개인정보 처리방침
+     </span>&nbsp;&nbsp;&nbsp;이용약관 &nbsp;&nbsp; 소개&nbsp; 제휴/광고 &nbsp; 문의/피드백</div>
+   <div class="row">
+     <div class="col-xs-6 col-md-6 col-lg-6" style="font-size: clamp(10px, 2vw, 17px); align-items: center;">
+       서울특별시 금천구 가산동 디지털로 9길 33 (IT미래타워)<br>
+       Tel 02) 000-000 / Fax 02) 000-0000 (주)Coin.Com<br>
+       사업자등록번호 : 000-00-00000
+     </div>
+     <div class="col-xs-6 col-sm-6 col-lg-6"
+       style="display: flex; justify-content: flex-end; text-align: center; font-size:clamp(9px,2vw,16px);">
+       © 2022 Coin.Com, Inc
+     </div>
+
+   </div>
+
+ </div>
+</div>
     <script>
         function CalendarControl() {
             const calendar = new Date();
