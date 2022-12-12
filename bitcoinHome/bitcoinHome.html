@@ -157,24 +157,49 @@
                       </div>
                     </div>
                   </div>
-                  <div style="background: #24262E 0% 0% no-repeat padding-box;
-                              margin-top:10px;
-                              box-shadow: 0px 3px 6px #00000029;
-                              padding-left: 40px;
-                              padding-top: 25px;
-                              padding-bottom: 9px;
-                              border-radius: 5px;">
-                              <div style="display: flex; "><div class="rounded-circle" style="height: 65px; width:65px; background-color: orange"></div>  
-                            
-                            <div style="margin-left: 15px;"><p>비트코인 BTC</p>
-                            <p class='mb-0'style="margin-top: 20px; "><span style="font-size: 32px;">31,010,000</span><span> KRW</span></p>
-                            <p style="font-size: 14px;">전일대비 <span style="color:#26A69A">13,000 (+ 0.04%)</span></p>
-                            </div>
-                             <div style="margin-left: 123px;"><p>바이낸스 USDT</p>
-                            <p class='mb-0'style="margin-top: 20px; "><span style="font-size: 32px;">30,349,912</span><span> KRW</span></p>
-                            <p style="font-size: 14px;">차액 <span style="color:#26A69A">660,088 (+ 2.17%)</span></p>
-                            </div>
-                            </div>
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      margin-top: 10px;
+                      box-shadow: 0px 3px 6px #00000029;
+                      padding-left: 40px;
+                      padding-top: 25px;
+                      padding-bottom: 9px;
+                      border-radius: 5px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        class="rounded-circle"
+                        style="
+                          height: 65px;
+                          width: 65px;
+                          background-color: orange;
+                        "
+                      ></div>
+                      <div style="margin-left: 15px">
+                        <p>비트코인 BTC</p>
+                        <p class="mb-0" style="margin-top: 20px">
+                          <span style="font-size: 32px">31,010,000</span
+                          ><span> KRW</span>
+                        </p>
+                        <p style="font-size: 14px">
+                          전일대비
+                          <span style="color: #26a69a">13,000 (+ 0.04%)</span>
+                        </p>
+                      </div>
+                      <div style="margin-left: clamp(20px, 10%, 132px)">
+                        <p>바이낸스 USDT</p>
+                        <p class="mb-0" style="margin-top: 20px">
+                          <span style="font-size: 32px">30,349,912</span
+                          ><span> KRW</span>
+                        </p>
+                        <p style="font-size: 14px">
+                          차액
+                          <span style="color: #26a69a">660,088 (+ 2.17%)</span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-3" style="margin-top: 25px">
@@ -189,10 +214,7 @@
                         padding-left: 17px;
                       "
                     >
-                      <p>
-                        정렬 기준
-                      </span>
-                      </p>
+                      <p>정렬 기준</p>
                       <p>필터</p>
                     </div>
                     <div
@@ -203,20 +225,1110 @@
                         padding-left: 17px;
                       "
                     >
-                      <div><p style="white-space: no-wrap;">코인명  <span style="margin-left: 20px;"><i class="fa-solid fa-caret-down"></i></p>
-                      <p>현재가</p>
-                      <p>전일대비</p>
-                      <p>거래대금</p>
+                      <div>
+                        <p style="white-space: no-wrap">
+                          코인명
+                          <span style="margin-left: 20px"
+                            ><i class="fa-solid fa-caret-down"></i
+                          ></span>
+                        </p>
+                        <p>현재가</p>
+                        <p>전일대비</p>
+                        <p>거래대금</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div>testtw</div>
+              <div>Chart goes here</div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-4" style="margin-top: 25px">
-              test
+            <div
+              class="col-xs-12 col-sm-12 col-md-12 col-lg-4"
+              style="margin-top: 25px"
+            >
+              <div
+                style="display: flex; justify-content: center; width: 100%"
+                class="d-flex d-lg-none"
+              >
+                <h1 style="font-weight: 700; font-size: 30px">
+                  <span style="color: #ffe600">Coin.</span
+                  ><span style="color: #fff">Com</span>
+                </h1>
+              </div>
+              <ul
+                class="nav nav-pills mb-1 d-none d-lg-flex"
+                id="pills-tab"
+                role="tablist"
+                style="
+                  background: #24262e 0% 0% no-repeat padding-box;
+                  box-shadow: 0px 3px 6px #00000029;
+                  border-radius: 5px;
+                  min-height: 88px;
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                "
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-alll-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-alll"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-alll"
+                    aria-selected="true"
+                    style="background-color: inherit; color: #fff; margin: 3px"
+                  >
+                    기준 거래소
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-new-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-new"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-new"
+                    aria-selected="false"
+                    style="background-color: #1e2027; color: #fff; margin: 3px"
+                  >
+                    업비트
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-art-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-art"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-art"
+                    aria-selected="false"
+                    style="background-color: inherit; color: #fff; margin: 3px"
+                  >
+                    빗썸
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-domain-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-domain"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-domain"
+                    aria-selected="false"
+                    style="background-color: inherit; color: #fff; margin: 3px"
+                  >
+                    코빗
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-music-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-music"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-music"
+                    aria-selected="false"
+                    style="background-color: inherit; color: #fff; margin: 3px"
+                  >
+                    바이낸스
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-alll"
+                  role="tabpanel"
+                >
+                  <div
+                    class="input-group mb-1"
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                    "
+                  >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="코인명/심볼 (철자로 검색 ex. 비트코인, ㅂㅌㅋㅇ)"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                      style="
+                        background: #24262e 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 3px 6px #00000029;
+                        height: 38px;
+                        border: none;
+                        color: #fff;
+                      "
+                    />
+                    <span
+                      class="input-group-text"
+                      id="basic-addon1"
+                      style="
+                        background: #24262e 0% 0% no-repeat padding-box;
+                        color: #fff;
+                        border: none;
+                      "
+                      >@</span
+                    >
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          비트코인<span style="color: #9a9a9a">BTC</span>
+                        </p>
+                        <p class="mb-0" style="color: #26a296; font-size: 11px">
+                          + 13,000 (+ 0.04%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">31,010,000</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        30,349,912
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        +660,088
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 2.17%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,723 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        15 조 7,310 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #ffe600;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="mb-1"
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 7px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center">
+                      <div>
+                        <i
+                          class="fa-solid fa-star"
+                          style="
+                            font-size: 12px;
+                            color: #9a9a9a;
+                            margin-right: 9px;
+                          "
+                        ></i>
+                      </div>
+                      <div>
+                        <p class="mb-0" style="font-size: 12px">
+                          플로우<span style="color: #9a9a9a; font-size: 11px"
+                            >FLOW</span
+                          >
+                        </p>
+                        <p class="mb-0" style="color: #ef5350; font-size: 11px">
+                          - 45.0 (- 1.12%)
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">3,970</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,913
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px; color: #26a296">
+                        + 56.7
+                      </p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        + 1.45%
+                      </p>
+                    </div>
+                    <div>
+                      <p class="mb-0" style="font-size: 12px">1,697 억</p>
+                      <p class="mb-0" style="color: #9a9a9a; font-size: 11px">
+                        3,475 억
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-new"
+                  role="tabpanel"
+                  aria-labelledby="pills-new-tab"
+                >
+                  New
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-art"
+                  role="tabpanel"
+                  aria-labelledby="pills-art-tab"
+                >
+                  ART
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-domain"
+                  role="tabpanel"
+                  aria-labelledby="pills-domain-tab"
+                >
+                  Domain
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-music"
+                  role="tabpanel"
+                  aria-labelledby="pills-music-tab"
+                >
+                  Music
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-photo"
+                  role="tabpanel"
+                  aria-labelledby="pills-photo-tab"
+                >
+                  Photo
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-sports"
+                  role="tabpanel"
+                  aria-labelledby="pills-sports-tab"
+                >
+                  Sports
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-trading"
+                  role="tabpanel"
+                  aria-labelledby="pills-trading-tab"
+                >
+                  Trading Card
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="row gx-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+              <p style="font-size: 20px; letter-spacing: 0px">최신 관련기사</p>
+              <div class="row g-2">
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 5px;
+                      padding: 16px;
+                    "
+                  >
+                    <div style="display: flex">
+                      <div
+                        style="
+                          margin-right: 5px;
+                          width: 16px;
+                          height: 16px;
+                          background: #ffffff 0% 0% no-repeat padding-box;
+                        "
+                      ></div>
+                      <p style="font-size: 12px" class="mb-0">보도사</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between">
+                      <div style="width: 50%">
+                        <p style="font-size: 16px">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing...
+                        </p>
+                      </div>
+
+                      <div
+                        style="
+                          background-color: gray;
+                          width: 95px;
+                          height: 95px;
+                        "
+                      ></div>
+                    </div>
+                    <p class="mb-0" style="font-size: 14px; color: #9a9a9a">
+                      4시간 전
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-12"
+                  style="display: flex; justify-content: flex-end"
+                >
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 10px;
+                      width: 46px;
+                      height: 39px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <i class="fa-solid fa-bell" style="font-size: 20px"></i>
+                  </div>
+                  <div
+                    style="
+                      background: #24262e 0% 0% no-repeat padding-box;
+                      box-shadow: 0px 3px 6px #00000029;
+                      border-radius: 10px;
+                      width: 46px;
+                      height: 39px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      margin-left: 5px;
+                    "
+                  >
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">test2</div>
           </div>
         </div>
       </div>
